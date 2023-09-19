@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+:root {
+    /* colors are changeable always more combinations are in "https://coolors.co/" */
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --green: hsl(157, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --clr-Transparent-Soft-violet: hsla(0, 0%, 0%, 0.5);
+
+    /* animation and some effects */
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    /* font-fam*/
+    --body-font-family: 'Rock Salt', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+body {
+    font-family: var(--body-font-family);
+    text-decoration: var(--text-dec);
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 16px
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    color: #1e00ff;
+}
+
+/* center container */
+.container {
+    max-width: 350px;
+    margin: 50px auto;
+    background-color: #e1ff00;
+    border-radius: 5px;
+    border: 0.5px solid #333;
+    margin-top: 7rem;
+}
+
+.container .listItem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+
+.container .listItem:last-child {
+    border-bottom: 0;
+}
+
+.container .listItem input:checked+p {
+    background-color: #ff0061;
+    text-decoration: line-through;
+}
+
+.container .listItem input:checked {
+    background-color: #ff0061;
+}
+
+.container .listItem input[type="checkbox"] {
+    margin: 20px;
+}
+
+.container .listItem p {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    border-left: 1px solid #333;
+}
