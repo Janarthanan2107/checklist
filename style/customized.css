@@ -89,8 +89,8 @@ h3 {
     color: #1e00ff;
 }
 
-/* center container */
-.container {
+/* center list-container */
+.list-container {
     max-width: 350px;
     margin: 50px auto;
     background-color: #e1ff00;
@@ -99,31 +99,22 @@ h3 {
     margin-top: 7rem;
 }
 
-.container .listItem {
+.list-container .list {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #333;
 }
 
-
-.container .listItem:last-child {
-    border-bottom: 0;
-}
-
-.container .listItem input:checked+p {
+.list-container .list input:checked+p {
     background-color: #ff0061;
     text-decoration: line-through;
 }
 
-.container .listItem input:checked {
-    background-color: #ff0061;
-}
-
-.container .listItem input[type="checkbox"] {
+.list-container .list input[type="checkbox"] {
     margin: 20px;
 }
 
-.container .listItem p {
+.list-container .list p {
     margin: 0;
     padding: 20px;
     transition: background 0.2s;
